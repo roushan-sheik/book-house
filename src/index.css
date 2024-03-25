@@ -4,3 +4,9 @@
 @tailwind utilities;
 /* font-family: "Playfair Display", serif; */
 /* font-family: "Work Sans", sans-serif; */
+body {
+  font-family: "Work Sans", sans-serif;
+}
+h1 h2 h3 h4 {
+  font-family: "Playfair Display", serif;
+}
