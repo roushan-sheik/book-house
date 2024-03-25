@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <nav className="lg:py-7 py-5">
-      <Navbar className="sticky top-0 shadow-none z-10 px-0 h-max max-w-full rounded-none  py-2 border-2 border-red-500 lg:py-4">
+      <Navbar className="sticky top-0 shadow-none z-10 px-0 h-max max-w-full rounded-none  py-2 lg:py-4">
         <div className="flex items-center justify-between text-blue-gray-900">
           <h3 className="text-medium lg:text-[28px] font-bold">
             <NavLink to={"/"} href="#" className="mr-4 cursor-pointer py-1.5  ">
