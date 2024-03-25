@@ -8,7 +8,7 @@ const Btn = ({ label, onClick, color, style, variant }) => {
     <Button
       className={` ${style}`}
       onClick={onClick}
-      color={color ? color : ""}
+      color={color ? color : "amber"}
       variant={variant}
     >
       {label || "Btn"}
