@@ -1,8 +1,7 @@
-import { IconButton, MobileNav, Navbar } from "@material-tailwind/react";
+import { Collapse, IconButton, Navbar } from "@material-tailwind/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Btn from "../../../components/button/Btn";
-
 import NavList from "../../../components/hero/NavList";
 function Header() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -73,7 +72,7 @@ function Header() {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>
+        <Collapse open={openNav}>
           {<NavList />}
           <div className="flex items-center gap-x-1">
             <Btn
@@ -87,7 +86,7 @@ function Header() {
               style={"w-full bg_sec text-white capitalize"}
             />
           </div>
-        </MobileNav>
+        </Collapse>
       </Navbar>
     </nav>
   );

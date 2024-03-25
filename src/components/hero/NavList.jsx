@@ -2,7 +2,7 @@
 import { Typography } from "@material-tailwind/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { navBarData } from "../../constants/nav";
+import { navBarData } from "../../constants/navBar";
 
 const NavList = () => {
   return (
@@ -19,7 +19,7 @@ const NavList = () => {
               to={nav.path}
               className={({ isActive, isPending }) =>
                 isActive
-                  ? "font-semibold text_brand"
+                  ? "font-semibold text_brand border-2 border-[#23be0a] rounded-lg px-4 py-3"
                   : isPending
                   ? "pending"
                   : "flex items-center"
