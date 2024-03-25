@@ -9,4 +9,27 @@ body {
 }
 h1 h2 h3 h4 {
   font-family: "Playfair Display", serif;
+  color: rgb(19, 19, 19);
+}
+/* custom class  */
+
+.bg_pri {
+  /* Your custom styles here */
+  background-color: #23be0a;
+}
+.bg_sec {
+  /* Your custom styles here */
+  background-color: #59c6d2;
+}
+.text-brand {
+  color: #23be0a;
+}
+.text_pri {
+  color: rgba(19, 19, 19);
+}
+.text_sec {
+  color: rgba(19, 19, 19, 0.8);
+}
+.text_third {
+  color: rgba(19, 19, 19, 0.7);
 }

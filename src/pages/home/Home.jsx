@@ -3,12 +3,10 @@ import React from "react";
 import Btn from "../../components/button/Btn";
 
 const Home = () => {
-  function handleClick() {
-    alert("clicked");
-  }
   return (
     <div>
-      <Btn onClick={handleClick} style={"bg-[#41C9E2] text-black"} />
+      <h2>Home</h2>
+      <Btn style="bg_pri" />
     </div>
   );
 };
