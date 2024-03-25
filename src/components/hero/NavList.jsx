@@ -19,7 +19,7 @@ const NavList = () => {
               to={nav.path}
               className={({ isActive, isPending }) =>
                 isActive
-                  ? "font-semibold text_brand border-2 border-[#23be0a] rounded-lg px-4 py-3"
+                  ? "font-semibold text_brand border-2 border-[#23be0a] rounded-lg lg:px-4 px-2 lg:py-3 py-[6px]"
                   : isPending
                   ? "pending"
                   : "flex items-center"
