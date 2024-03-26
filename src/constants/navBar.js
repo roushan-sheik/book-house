@@ -18,4 +18,9 @@ export const navBarData = [
     pathName: "Pages to Read",
     page: PageToRead,
   },
+  {
+    path: "/books/:id",
+    pathName: "Pages to Read",
+    page: PageToRead,
+  },
 ];
