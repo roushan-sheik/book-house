@@ -2,6 +2,7 @@
 import { Rating, Typography } from "@material-tailwind/react";
 import { object } from "prop-types";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Book = ({ book }) => {
   const { id, title, image, tags, author, rating, fiction } = book;
@@ -9,11 +10,13 @@ const Book = ({ book }) => {
   return (
     <div className=" border-2 p-6 rounded-2xl">
       {/* image box  */}
-      <div className="bg_third mb-6 cursor-pointer rounded-2xl flex justify-center items-center h-[230px] ">
-        <div className="object-cover w-[160px] h-[200px] ">
-          <img className=" h-full w-full" src={image} alt="" />
+      <Link to={`/book-details/${id}`}>
+        <div className="bg_third mb-6 cursor-pointer rounded-2xl flex justify-center items-center h-[230px] ">
+          <div className="object-cover w-[160px] h-[200px] ">
+            <img className=" h-full w-full" src={image} alt="" />
+          </div>
         </div>
-      </div>
+      </Link>
       <div className="flex gap-4 mb-6">
         {tags.map((tag) => (
           <Typography
