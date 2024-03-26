@@ -6,7 +6,7 @@ const useFetchData = () => {
   React.useEffect(() => {
     async function fetchData() {
       setLoading(true);
-      const res = await fetch("books.json");
+      const res = await fetch("/books.json");
       const data = await res.json();
       setBooks(data);
       setLoading(false);

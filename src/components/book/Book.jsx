@@ -5,7 +5,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Book = ({ book }) => {
-  const { id, title, image, tags, author, rating, fiction } = book;
+  const { id, title, image, tags, author, rating } = book;
 
   return (
     <div className=" border-2 p-6 rounded-2xl">

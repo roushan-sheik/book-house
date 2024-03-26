@@ -10,7 +10,7 @@ const NavList = () => {
       {navBarData.map((nav) => {
         return (
           <Typography
-            key={nav.pathName}
+            key={(nav.pathName, nav.page)}
             as="li"
             variant="small"
             className="p-1 lg:text-lg text-medium  text_sec"

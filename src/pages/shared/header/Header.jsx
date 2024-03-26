@@ -2,7 +2,7 @@ import { Collapse, IconButton, Navbar } from "@material-tailwind/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Btn from "../../../components/button/Btn";
-import NavList from "../../../components/hero/NavList";
+import NavList from "../../../components/navList/NavList";
 function Header() {
   const [openNav, setOpenNav] = React.useState(false);
 
