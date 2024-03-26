@@ -20,7 +20,7 @@ export const navBarData = [
     page: PageToRead,
   },
   {
-    path: "/book-details/:id",
+    path: "/book-details/:userId",
     page: BookDetails,
   },
 ];
