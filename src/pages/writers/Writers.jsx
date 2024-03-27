@@ -14,13 +14,16 @@ const Writers = () => {
   }, []);
 
   return (
-    <>
+    <div>
+      <h2 className="p-8 mb-6 text-center bg_third rounded-2xl lg:text-3xl text-2xl font-bold text_pri">
+        Top Writers
+      </h2>
       <div className="grid  grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
         {writers.map((writer) => (
           <Writer key={writer.id} writer={writer} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
