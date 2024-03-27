@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
+import SortingMenu from "../../components/sorting-menu/SortingMenu";
 import { getBookStorage } from "../../utils/loacla-storage";
 
 const ListedBooks = () => {
@@ -22,8 +23,20 @@ const ListedBooks = () => {
     }
     fetchData();
   }, []);
-  console.log(wishlist);
-  return <div>ListedBooks</div>;
+
+  return (
+    <div>
+      <div className="">
+        <h2 className="p-8 text-center bg_third rounded-2xl lg:text-3xl text-2xl font-bold text_pri">
+          Books
+        </h2>
+        {/* sorting button  */}
+        <div className="flex justify-center mt-8">
+          <SortingMenu />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default ListedBooks;
