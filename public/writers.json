@@ -66,11 +66,7 @@
     "country": "United Kingdom",
     "birthday": "July 31, 1965",
     "image": "https://www.bloomsbury.com/media/r41o2jaa/j-k-rowling.png?width=500&height=500",
-    "books": [
-      "Harry Potter",
-      "Fantastic Beasts and Where to Find Them",
-      "The Casual Vacancy"
-    ]
+    "books": ["Harry Potter", "Fantastic Beasts ", "The Casual Vacancy"]
   },
   {
     "id": 9,
