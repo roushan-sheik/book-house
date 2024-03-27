@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import ListBook from "../../components/list-book/ListBook";
 import SortingMenu from "../../components/sorting-menu/SortingMenu";
 import { getBookStorage } from "../../utils/loacla-storage";
 
@@ -40,15 +41,24 @@ const ListedBooks = () => {
         <div className="mt-12">
           <Tabs>
             <TabList>
-              <Tab>Read Books</Tab>
-              <Tab>Wishlist Books</Tab>
+              <Tab>
+                <button>Read Books</button>
+              </Tab>
+              <Tab>
+                <button>Wishlist Books</button>
+              </Tab>
             </TabList>
 
             <TabPanel>
-              <h2>Any content 1</h2>
+              <div className="flex flex-col gap-6">Read books</div>
             </TabPanel>
             <TabPanel>
-              <h2>Any content 2</h2>
+              <div className="flex flex-col gap-6">
+                {wishlist &&
+                  wishlist.map((book) => (
+                    <ListBook book={book} key={book.id} />
+                  ))}
+              </div>
             </TabPanel>
           </Tabs>
         </div>
