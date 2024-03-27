@@ -66,7 +66,7 @@ function PageToRead() {
         {" "}
         <BarChart
           width={1000}
-          height={300}
+          height={500}
           data={data}
           margin={{
             top: 20,
