@@ -1,72 +1,92 @@
 [
   {
     "id": 1,
-    "name": "Harper Lee",
+    "name": "Central Public Library",
+    "established": "January 15, 1920",
+    "image": "https://onecms-res.cloudinary.com/image/upload/s--W--O-I-6--/c_crop,h_900,w_1600,x_0,y_44/f_auto,q_auto/c_fill,g_auto,h_676,w_1200/v1/mediacorp/cna/image/2024/01/12/central_public_library_coral_zone.jpg?itok=-7aPgEBa",
+    "location": "Fiction Section, Shelf A",
     "country": "United States",
-    "birthday": "April 28, 1926",
-    "image": "https://pathakshamabesh.com/wp-content/uploads/2022/02/4084a0711c388099e55c08e2c0f28a25.jpg"
+    "about_library": "The Central Public Library, established on January 15, 1920, is a cornerstone of literary culture in the United States. Located in the Fiction Section on Shelf A, it boasts an extensive collection of fictional works catering to diverse tastes."
   },
   {
     "id": 2,
-    "name": "George Orwell",
+    "name": "City Library",
+    "established": "March 10, 1935",
+    "image": "https://whatson.melbourne.vic.gov.au/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWsyWW1VNU1qZGhOUzAyWmpGaExUUTRaVEV0T1dVNFl5MDJZV1E0WlRjME9URTRaRFFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--eb60f68edbf533d7cfb1bff5cb089968a641845e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFMb0Eya0NXQUk9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--5c7b32c6a74ee88f2f4469ce3a4ae709d1994efe/City-Library-1.jpg",
+    "location": "Science Fiction Section, Shelf B",
     "country": "United Kingdom",
-    "birthday": "June 25, 1903",
-    "image": "https://www.orwellfoundation.com/wp-content/uploads/2010/09/4.jpg"
+    "about_library": "The City Library, established on March 10, 1935, is a hub of literary exploration in the United Kingdom. Situated in the Science Fiction Section on Shelf B, it offers a wide array of science fiction literature for enthusiasts of the genre."
   },
   {
     "id": 3,
-    "name": "F. Scott Fitzgerald",
-    "country": "United States",
-    "birthday": "September 24, 1896",
-    "image": "https://images2.penguinrandomhouse.com/cover/9780593311844"
+    "name": "Downtown Library",
+    "established": "November 5, 1948",
+    "image": "https://images.adsttc.com/media/images/6121/a1ab/b83a/3a01/64c8/ab80/newsletter/npl-07-lobby.jpg?1629594050",
+    "location": "Mystery Section, Shelf C",
+    "country": "Canada",
+    "about_library": "The Downtown Library, established on November 5, 1948, is a haven for mystery lovers in Canada. Nestled in the Mystery Section on Shelf C, it offers a thrilling collection of mystery novels and detective stories."
   },
   {
     "id": 4,
-    "name": "Margaret Atwood",
-    "country": "Canada",
-    "birthday": "November 18, 1939",
-    "image": "https://m.media-amazon.com/images/I/31zzmiNcUuL._SY445_SX342_.jpg"
+    "name": "Community Library",
+    "established": "February 20, 1955",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4GOnzdST0I9_Rzr0MaluB1MnMHiwf8JAqQF2UkyiLCw&s",
+    "location": "Romance Section, Shelf D",
+    "country": "Australia",
+    "about_library": "The Community Library, established on February 20, 1955, celebrates the power of love and romance in Australia. It resides in the Romance Section on Shelf D, offering an enchanting selection of romantic novels."
   },
   {
     "id": 5,
-    "name": "Jane Austen",
-    "country": "United Kingdom",
-    "birthday": "December 16, 1775",
-    "image": "https://cdn.kobo.com/book-images/b92c31a2-6731-436c-b532-5a3207fec2b6/353/569/90/False/pride-and-prejudice-the-original-1813-edition-a-jane-austen-classic-novel.jpg"
+    "name": "Public Library",
+    "established": "September 30, 1962",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXoACstB0Ow0f3M7m_YmS1WXyEpb9OZjZHR9TWswhzfg&s",
+    "location": "Biography Section, Shelf E",
+    "country": "France",
+    "about_library": "The Public Library, established on September 30, 1962, is a treasure trove of biographical literature in France. Located in the Biography Section on Shelf E, it offers captivating insights into the lives of notable figures."
   },
   {
     "id": 6,
-    "name": "J.R.R. Tolkien",
-    "country": "United Kingdom",
-    "birthday": "January 3, 1892",
-    "image": "https://m.media-amazon.com/images/I/71k--OLmZKL._SY522_.jpg"
+    "name": "Central Public Library",
+    "established": "June 12, 1977",
+    "image": "https://onecms-res.cloudinary.com/image/upload/s--5i3Ffhsu--/c_fill,g_auto,h_468,w_830/f_auto,q_auto/v1/mediacorp/cna/image/2024/01/12/central_public_library_intertidal_zone.jpg?itok=sMIxIl6_",
+    "location": "History Section, Shelf F",
+    "country": "Germany",
+    "about_library": "The Central Public Library, established on June 12, 1977, is a gateway to the past in Germany. Situated in the History Section on Shelf F, it houses an extensive collection of historical texts and documents."
   },
   {
     "id": 7,
-    "name": "Dan Brown",
-    "country": "United States",
-    "birthday": "June 22, 1964",
-    "image": "https://rukminim2.flixcart.com/image/832/832/jp2xoy80/book/0/1/7/the-da-vinci-code-original-imafbeey5dyjxu5h.jpeg?q=70&crop=false"
+    "name": "City Library",
+    "established": "August 25, 1983",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSesUQyjdws1lW5N7GZInj8jPEPb69zUQYg_Y-_7x285w&s",
+    "location": "Fantasy Section, Shelf G",
+    "country": "Japan",
+    "about_library": "The City Library, established on August 25, 1983, is a realm of imagination in Japan. Found in the Fantasy Section on Shelf G, it offers a fantastical journey through its diverse collection of fantasy literature."
   },
   {
     "id": 8,
-    "name": "J.K. Rowling",
-    "country": "United Kingdom",
-    "birthday": "July 31, 1965",
-    "image": "https://www.bookstation.ie/wp-content/uploads/2019/06/Harry-Potter-25-Year.jpg"
+    "name": "Downtown Library",
+    "established": "May 7, 1990",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYbFo3oFNnJwd2WoyKKDegZz4-hC7C3HjkF_WTlHiR-w&s",
+    "location": "Art Section, Shelf H",
+    "country": "Italy",
+    "about_library": "The Downtown Library, established on May 7, 1990, is a cultural hub in Italy. Situated in the Art Section on Shelf H, it provides a platform for artistic exploration and expression."
   },
   {
     "id": 9,
-    "name": "Aldous Huxley",
-    "country": "United Kingdom",
-    "birthday": "July 26, 1894",
-    "image": "https://cdn2.penguin.com.au/covers/400/9781784876258.jpg"
+    "name": "Community Library",
+    "established": "April 3, 2001",
+    "image": "https://images.adsttc.com/media/images/6121/a1b7/b83a/3a01/64c8/ab86/large_jpg/npl-17-adultstacks.jpg?1629594068",
+    "location": "Science Section, Shelf I",
+    "country": "Spain",
+    "about_library": "The Community Library, established on April 3, 2001, fosters scientific inquiry and discovery in Spain. It is located in the Science Section on Shelf I, offering a diverse collection of scientific literature and resources."
   },
   {
     "id": 10,
-    "name": "J.D. Salinger",
-    "country": "United States",
-    "birthday": "January 1, 1919",
-    "image": "https://olympialetan.com/cdn/shop/products/CLASSICSBC7_1024x1024.jpg?v=1594995512"
+    "name": "Public Library",
+    "established": "July 19, 2015",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjmPQivggRSwPgvPJM-gXZxoYKjD2TuJSAzGVzmtE9tQ&s",
+    "location": "Poetry Section, Shelf J",
+    "country": "Brazil",
+    "about_library": "The Public Library, established on July 19, 2015, celebrates the beauty of poetry in Brazil. It is situated in the Poetry Section on Shelf J, offering a rich collection of poetic works for enthusiasts and scholars alike."
   }
 ]
