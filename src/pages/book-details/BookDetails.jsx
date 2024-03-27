@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
-import { getBookStorage, setBookStorage } from "../../utils/loacla-storage";
+import { readStore } from "../../utils/read-store/readStore";
 
 const BookDetails = () => {
   const [singleData, setSingleData] = React.useState({});
@@ -38,21 +38,9 @@ const BookDetails = () => {
   } = findData || {};
   // handleWishlistClick handleReadClick
   function handleReadClick() {
-    // get readLoacle strage
-    const readStore = getBookStorage("read-store");
-    // console.log(readStore);
-    // check if exist
-    const exists = readStore.find((bookId) => bookId == id);
-    // return error msg
-    if (exists) {
-      toast.warning("You have read this book!", {
-        position: "top-right",
-      });
-      return;
-    }
-    // set id to the locale storage
-    setBookStorage("read-store", id);
+    readStore("read-store", id);
   }
+
   function handleWishlistClick() {
     toast.success("Wishlist!", {
       position: "top-center",
