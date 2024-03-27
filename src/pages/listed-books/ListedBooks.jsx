@@ -3,19 +3,26 @@ import React, { useEffect } from "react";
 import { getBookStorage } from "../../utils/loacla-storage";
 
 const ListedBooks = () => {
-  const [books, setBooks] = React.useState([]);
+  const [wishlist, setWishlist] = React.useState();
+  const store = getBookStorage("wishlist-store");
   // fetch data
   useEffect(() => {
+    let storeData = [];
     async function fetchData() {
       const res = await fetch("/books.json");
       const data = await res.json();
-      setBooks(data);
+      data.find((book) => {
+        for (const id of store) {
+          if (book.id == id) {
+            storeData.push(book);
+          }
+        }
+      });
+      setWishlist(storeData);
     }
     fetchData();
   }, []);
-  const wishListData = getBookStorage("wishlist-store");
-  console.log(books);
-  console.log(wishListData);
+  console.log(wishlist);
   return <div>ListedBooks</div>;
 };
 
