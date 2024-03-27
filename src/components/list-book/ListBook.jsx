@@ -25,7 +25,7 @@ const ListBook = ({ book }) => {
     <div className="flex gap-6 p-6 flex-col lg:flex-row">
       {/* image box  */}
       <div className="flex justify-center items-center rounded-xl bg_third lg:h-[228px] h-[200px] lg:w-[230px] w-full  ">
-        <div className="lg:w-[150px] w-[130px] lg:h-[150px] h-[160px] ">
+        <div className="lg:w-[150px] w-[130px] lg:h-[170px] h-[160px] ">
           <img className="w-full h-full " src={image} alt="" />
         </div>
       </div>
