@@ -8,25 +8,34 @@ import { getBookStorage } from "../../utils/loacla-storage";
 
 const ListedBooks = () => {
   const [wishlist, setWishlist] = React.useState();
-  const store = getBookStorage("wishlist-store");
+  const [read, setRead] = React.useState();
+  const wishlistStore = getBookStorage("wishlist-store");
+  const readStore = getBookStorage("read-store");
   // fetch data
   useEffect(() => {
     let storeData = [];
+    let readData = [];
     async function fetchData() {
       const res = await fetch("/books.json");
       const data = await res.json();
       data.find((book) => {
-        for (const id of store) {
+        for (const id of wishlistStore) {
           if (book.id == id) {
             storeData.push(book);
           }
         }
+        for (const id of readStore) {
+          if (book.id == id) {
+            readData.push(book);
+          }
+        }
       });
       setWishlist(storeData);
+      setRead(readData);
     }
     fetchData();
   }, []);
-
+  console.log(read);
   return (
     <div>
       <div className="">
@@ -42,15 +51,20 @@ const ListedBooks = () => {
           <Tabs>
             <TabList>
               <Tab>
-                <button>Read Books</button>
+                <button className="text-lg">Read Books</button>
               </Tab>
               <Tab>
-                <button>Wishlist Books</button>
+                <button className="text-lg">Wishlist Books</button>
               </Tab>
             </TabList>
 
             <TabPanel>
-              <div className="flex flex-col gap-6">Read books</div>
+              <div className="flex flex-col gap-6">
+                {wishlist &&
+                  wishlist.map((book) => (
+                    <ListBook book={book} key={book.id} />
+                  ))}
+              </div>
             </TabPanel>
             <TabPanel>
               <div className="flex flex-col gap-6">
