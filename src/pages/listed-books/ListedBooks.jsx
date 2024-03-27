@@ -35,6 +35,10 @@ const ListedBooks = () => {
     }
     fetchData();
   }, []);
+  // sort: all , rating, pages, publish
+  function handleSort(val) {
+    alert(val);
+  }
 
   return (
     <div>
@@ -44,7 +48,7 @@ const ListedBooks = () => {
         </h2>
         {/* sorting button  */}
         <div className="flex justify-center mt-8">
-          <SortingMenu />
+          <SortingMenu handleSort={handleSort} />
         </div>
         {/* listed books  */}
         <div className="mt-12">

@@ -1,8 +1,9 @@
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { Button, Menu, MenuHandler, MenuList } from "@material-tailwind/react";
+import PropTypes from "prop-types";
 import React from "react";
 
-const SortingMenu = () => {
+const SortingMenu = ({ handleSort }) => {
   const [openMenu, setOpenMenu] = React.useState(false);
 
   return (
@@ -23,12 +24,28 @@ const SortingMenu = () => {
       </MenuHandler>
       <MenuList className="hidden w-[300px]   lg:grid">
         <div className="  flex text-lg flex-start flex-col gap-2">
-          <button className="hover:text-black hover:font-bold">All</button>
-          <button className="hover:text-black hover:font-bold">Rating</button>
-          <button className="hover:text-black hover:font-bold">
+          <button
+            onClick={() => handleSort("all")}
+            className="hover:text-black hover:font-bold"
+          >
+            All
+          </button>
+          <button
+            onClick={() => handleSort("rating")}
+            className="hover:text-black hover:font-bold"
+          >
+            Rating
+          </button>
+          <button
+            onClick={() => handleSort("pages")}
+            className="hover:text-black hover:font-bold"
+          >
             Number of Pages
           </button>
-          <button className="hover:text-black hover:font-bold">
+          <button
+            onClick={() => handleSort("publish")}
+            className="hover:text-black hover:font-bold"
+          >
             Publish Year
           </button>
         </div>
@@ -36,5 +53,7 @@ const SortingMenu = () => {
     </Menu>
   );
 };
-
+SortingMenu.propTypes = {
+  handleSort: PropTypes.func,
+};
 export default SortingMenu;
