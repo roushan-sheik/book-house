@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
+import { getBookStorage } from "../../utils/loacla-storage";
 
 const BookDetails = () => {
   const [singleData, setSingleData] = React.useState({});
@@ -23,6 +24,7 @@ const BookDetails = () => {
   const findData = allBooks.find((book) => book.id == userId);
 
   const {
+    id,
     title,
     image,
     author,
@@ -39,6 +41,12 @@ const BookDetails = () => {
     toast.success("read !", {
       position: "top-right",
     });
+    // get readLoacle strage
+    const readStore = getBookStorage("read-store");
+    console.log(readStore);
+    // check if exist
+    // return error msg
+    // set id to the locale storage
   }
   function handleWishlistClick() {
     toast.success("Wishlist!", {
@@ -90,34 +98,23 @@ const BookDetails = () => {
             <Typography className="flex-1 text_third" as={"p"}>
               Number of Pages:
             </Typography>
-            <Typography className="flex-1 text_pri font-semibold" as={"p"}>
-              {page}
-            </Typography>
+            <p className="flex-1 text_pri font-semibold">{page && page}</p>
           </div>
           <div className="flex text-base mb-3">
             <Typography className="flex-1 text_third" as={"p"}>
               Publisher:
             </Typography>
-            <Typography className="flex-1 text_pri font-semibold" as={"p"}>
-              {publisher}
-            </Typography>
+            <p className="flex-1 text_pri font-semibold">{publisher}</p>
           </div>
           <div className="flex text-base mb-3">
             <Typography className="flex-1 text_third" as={"p"}>
               Year of Publishing:
             </Typography>
-            <Typography className="flex-1 text_pri font-semibold" as={"p"}>
-              {publishYear}
-            </Typography>
+            <p className="flex-1 text_pri font-semibold">{publishYear}</p>
           </div>
           <div className="flex text-base mb-3">
-            <Typography className="flex-1 text_third" as={"p"}>
-              Rating:
-            </Typography>
-            <Typography
-              className="flex-1 flex gap-2 items-center text_pri font-semibold text-base"
-              as={"p"}
-            >
+            <p className="flex-1 text_third">Rating:</p>
+            <div className="flex-1 flex gap-2 items-center text_pri font-semibold text-base">
               <Typography
                 className="
                font-semibold"
@@ -129,7 +126,7 @@ const BookDetails = () => {
               <Typography className="text-sm mt-1" as={"span"}>
                 <Rating value={4} />
               </Typography>
-            </Typography>
+            </div>
           </div>
           {/* button box  */}
           <div className="mt-8 flex gap-4 justify-center lg:justify-start">
