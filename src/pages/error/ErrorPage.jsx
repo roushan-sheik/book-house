@@ -1,7 +1,6 @@
 import { Button } from "@material-tailwind/react";
-import { Link, useRouteError } from "react-router-dom";
+import { Link } from "react-router-dom";
 const ErrorPage = () => {
-  const error = useRouteError();
   return (
     <div className="flex flex-col gap-6 items-center mt-[100px] h-screen">
       <h2 className="font-bold text-4xl ">404 Page Not Found</h2>
