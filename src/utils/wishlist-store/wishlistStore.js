@@ -17,7 +17,7 @@ export function wishlistStore(storeName, id) {
   // set id to the locale storage
   setBookStorage(storeName, id);
   // show the toast success message
-  toast.success("Added to the wishlist", {
-    position: "top-center",
+  toast.info("Added to the wishlist", {
+    position: "top-right",
   });
 }

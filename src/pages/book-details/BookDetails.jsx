@@ -50,7 +50,7 @@ const BookDetails = () => {
     console.log(exists);
     if (exists) {
       toast.error("Read book couldn't exist!", {
-        position: "top-center",
+        position: "top-right",
       });
       return;
     } else {

@@ -17,7 +17,7 @@ export function readStore(storeName, id) {
   // set id to the locale storage
   setBookStorage(storeName, id);
   // show the toast success message
-  toast.success("Read", {
-    position: "top-center",
+  toast.success("Read done", {
+    position: "top-right",
   });
 }
