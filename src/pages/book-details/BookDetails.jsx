@@ -11,7 +11,6 @@ const BookDetails = () => {
     const singleData = books.find((book) => book.id == userId);
     setSingleData(singleData);
   }, [books, userId]);
-  console.log(singleData);
 
   return <div>BookDetails</div>;
 };
