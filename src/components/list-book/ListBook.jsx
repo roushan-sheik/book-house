@@ -23,7 +23,7 @@ const ListBook = ({ book }) => {
   } = book || {};
 
   return (
-    <div className="flex gap-6 p-6 flex-col lg:flex-row">
+    <div className="flex gap-6 p-6 flex-col lg:flex-row border-2 rounded-2xl">
       {/* image box  */}
       <div className="flex justify-center items-center rounded-xl bg_third lg:h-[228px] h-[200px] lg:w-[230px] w-full  ">
         <div className="lg:w-[150px] w-[130px] lg:h-[170px] h-[160px] ">
