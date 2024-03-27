@@ -13,11 +13,11 @@ function Footer() {
               <Typography
                 variant="small"
                 color="blue-gray"
-                className="mb-4 font-bold uppercase opacity-50"
+                className="mb-4 font-bold text-center lg:text-start uppercase opacity-50"
               >
                 {title}
               </Typography>
-              <ul className="space-y-1">
+              <ul className="space-y-1 text-center lg:text-start">
                 {links.map((link, key) => (
                   <Typography
                     key={key}
@@ -40,7 +40,7 @@ function Footer() {
         <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 ">
           <Typography
             variant="small"
-            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+            className="mb-4 text-center font-normal  text-blue-gray-900 md:mb-0"
           >
             &copy; {currentYear}{" "}
             <a className="text-center" href="https://roushan-sheik.netlify.app">
