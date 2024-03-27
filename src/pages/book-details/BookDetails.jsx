@@ -2,6 +2,8 @@
 import { Rating, Typography } from "@material-tailwind/react";
 import React from "react";
 import { useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
 
 const BookDetails = () => {
@@ -32,6 +34,17 @@ const BookDetails = () => {
     publishYear,
     rating,
   } = findData || {};
+  // handleWishlistClick handleReadClick
+  function handleReadClick() {
+    toast.success("read !", {
+      position: "top-right",
+    });
+  }
+  function handleWishlistClick() {
+    toast.success("Wishlist!", {
+      position: "top-center",
+    });
+  }
 
   return (
     <>
@@ -42,6 +55,8 @@ const BookDetails = () => {
             <img className="w-full h-full" src={image} alt="" />
           </div>
         </div>
+        {/* Toast messsage container  */}
+        <ToastContainer />
         {/* details box  */}
         <div className="">
           <h2 className="text-center lg:text-start text-3xl lg:text-4xl 2xl:text-[40px] mb-5 font-bold">
@@ -119,12 +134,14 @@ const BookDetails = () => {
           {/* button box  */}
           <div className="mt-8 flex gap-4 justify-center lg:justify-start">
             <Btn
+              onClick={handleReadClick}
               label={"Read"}
               style={
                 "bg-transparent border-2 border-[#1313134d] capitalize text-lg font-semibold"
               }
             />
             <Btn
+              onClick={handleWishlistClick}
               label={"Wishlist"}
               style={"bg_sec capitalize text-white text-lg font-semibold"}
             />
