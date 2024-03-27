@@ -2,10 +2,11 @@
 import { Rating, Typography } from "@material-tailwind/react";
 import React from "react";
 import { useParams } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
 import { readStore } from "../../utils/read-store/readStore";
+import { wishlistStore } from "../../utils/wishlist-store/wishlistStore";
 
 const BookDetails = () => {
   const [singleData, setSingleData] = React.useState({});
@@ -42,9 +43,7 @@ const BookDetails = () => {
   }
 
   function handleWishlistClick() {
-    toast.success("Wishlist!", {
-      position: "top-center",
-    });
+    wishlistStore("wishlist-store", id);
   }
 
   return (
