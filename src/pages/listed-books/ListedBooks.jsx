@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 import SortingMenu from "../../components/sorting-menu/SortingMenu";
 import { getBookStorage } from "../../utils/loacla-storage";
 
@@ -33,6 +35,22 @@ const ListedBooks = () => {
         {/* sorting button  */}
         <div className="flex justify-center mt-8">
           <SortingMenu />
+        </div>
+        {/* listed books  */}
+        <div className="mt-12">
+          <Tabs>
+            <TabList>
+              <Tab>Read Books</Tab>
+              <Tab>Wishlist Books</Tab>
+            </TabList>
+
+            <TabPanel>
+              <h2>Any content 1</h2>
+            </TabPanel>
+            <TabPanel>
+              <h2>Any content 2</h2>
+            </TabPanel>
+          </Tabs>
         </div>
       </div>
     </div>
