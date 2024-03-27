@@ -67,7 +67,7 @@ const ListBook = ({ book }) => {
           </div>
         </div>
         {/* button box  */}
-        <div className="mt-4 flex gap-3">
+        <div className="mt-4 flex flex-col lg:flex-row gap-3">
           <Btn
             label={`Category: ${category}`}
             style={
