@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Harper Lee",
+    "country": "United States",
+    "birthday": "April 28, 1926",
+    "image": "https://pathakshamabesh.com/wp-content/uploads/2022/02/4084a0711c388099e55c08e2c0f28a25.jpg"
+  },
+  {
+    "id": 2,
+    "name": "George Orwell",
+    "country": "United Kingdom",
+    "birthday": "June 25, 1903",
+    "image": "https://www.orwellfoundation.com/wp-content/uploads/2010/09/4.jpg"
+  },
+  {
+    "id": 3,
+    "name": "F. Scott Fitzgerald",
+    "country": "United States",
+    "birthday": "September 24, 1896",
+    "image": "https://images2.penguinrandomhouse.com/cover/9780593311844"
+  },
+  {
+    "id": 4,
+    "name": "Margaret Atwood",
+    "country": "Canada",
+    "birthday": "November 18, 1939",
+    "image": "https://m.media-amazon.com/images/I/31zzmiNcUuL._SY445_SX342_.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Jane Austen",
+    "country": "United Kingdom",
+    "birthday": "December 16, 1775",
+    "image": "https://cdn.kobo.com/book-images/b92c31a2-6731-436c-b532-5a3207fec2b6/353/569/90/False/pride-and-prejudice-the-original-1813-edition-a-jane-austen-classic-novel.jpg"
+  },
+  {
+    "id": 6,
+    "name": "J.R.R. Tolkien",
+    "country": "United Kingdom",
+    "birthday": "January 3, 1892",
+    "image": "https://m.media-amazon.com/images/I/71k--OLmZKL._SY522_.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Dan Brown",
+    "country": "United States",
+    "birthday": "June 22, 1964",
+    "image": "https://rukminim2.flixcart.com/image/832/832/jp2xoy80/book/0/1/7/the-da-vinci-code-original-imafbeey5dyjxu5h.jpeg?q=70&crop=false"
+  },
+  {
+    "id": 8,
+    "name": "J.K. Rowling",
+    "country": "United Kingdom",
+    "birthday": "July 31, 1965",
+    "image": "https://www.bookstation.ie/wp-content/uploads/2019/06/Harry-Potter-25-Year.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Aldous Huxley",
+    "country": "United Kingdom",
+    "birthday": "July 26, 1894",
+    "image": "https://cdn2.penguin.com.au/covers/400/9781784876258.jpg"
+  },
+  {
+    "id": 10,
+    "name": "J.D. Salinger",
+    "country": "United States",
+    "birthday": "January 1, 1919",
+    "image": "https://olympialetan.com/cdn/shop/products/CLASSICSBC7_1024x1024.jpg?v=1594995512"
+  }
+]

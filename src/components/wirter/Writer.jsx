@@ -18,7 +18,7 @@ const Writer = ({ writer }) => {
       {/* content box  */}
       <div>
         <h2 className="text-2xl font-bold text_pri mt-4 mb-1 ">{name}</h2>
-        <h2 className="text-lg font-semibold text_sec mb-1">
+        <h2 className="text-lg font-medium text_sec mb-1">
           Country: {country}
         </h2>
         <p className="text_third mb-4 ">Birth: {birthday}</p>
