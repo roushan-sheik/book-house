@@ -49,7 +49,7 @@ const BookDetails = () => {
     console.log(read_storage);
     console.log(exists);
     if (exists) {
-      toast.error("Read book couldn't exist!", {
+      toast.error("Read book couldn't add to the wishlist.", {
         position: "top-right",
       });
       return;
