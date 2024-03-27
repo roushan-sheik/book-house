@@ -6,11 +6,15 @@ import Header from "../pages/shared/header/Header";
 
 const Root = () => {
   return (
-    <div className="w-[90%] mx-auto max-w-[112.5rem]">
-      <Header />
-      <Outlet />
-      <Footer />
-    </div>
+    <>
+      <div className=" max-w-[112.5rem]">
+        <div className="w-[90%] mx-auto">
+          <Header />
+          <Outlet />
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 
