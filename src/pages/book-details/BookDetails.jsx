@@ -44,15 +44,17 @@ const BookDetails = () => {
         </div>
         {/* details box  */}
         <div className="">
-          <h2 className="text-3xl lg:text-4xl 2xl:text-[40px] mb-5 font-bold">
+          <h2 className="text-center lg:text-start text-3xl lg:text-4xl 2xl:text-[40px] mb-5 font-bold">
             {title}
           </h2>
-          <p className="text-xl font-medium text-lx text_sec mb-5">
+          <p className="text-center lg:text-start text-xl font-medium text-lx text_sec mb-5">
             By: {author}
           </p>
-          <div className="text-xl font-medium border-y-2 py-3">Fiction</div>
-          <p className="text_third text-base mt-5">
-            <span className="font-bold text_pri">Review:</span> {review}
+          <div className="text-center lg:text-start text-xl font-medium border-y-2 py-3">
+            Fiction
+          </div>
+          <p className="text-justify lg:text-start text_third text-base mt-5">
+            <span className=" font-bold text_pri">Review:</span> {review}
           </p>
           <div className="flex gap-3 lg:mt-10 mt-6 border-b-2 pb-5">
             <p className="font-bold text_pri">Tag</p>
@@ -115,7 +117,7 @@ const BookDetails = () => {
             </Typography>
           </div>
           {/* button box  */}
-          <div className="mt-8 flex gap-4 ">
+          <div className="mt-8 flex gap-4 justify-center lg:justify-start">
             <Btn
               label={"Read"}
               style={
