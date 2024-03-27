@@ -39,10 +39,6 @@ h1 h2 h3 h4 {
   color: rgba(19, 19, 19, 0.7);
 }
 /* border: 1px solid rgba(19, 19, 19, 0.3); */
-/* background: #328eff26; */
 .testing_p {
-  color: rgba(19, 19, 19, 0.7);
-  color: #328eff;
-  background: #ffac3326;
-  color: #ffac33;
+  /* background: #328eff26; */
 }

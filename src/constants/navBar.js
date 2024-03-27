@@ -1,8 +1,8 @@
 import BookDetails from "../pages/book-details/BookDetails";
+import ErrorPage from "../pages/error/ErrorPage";
 import Home from "../pages/home/Home";
 import ListedBooks from "../pages/listed-books/ListedBooks";
 import PageToRead from "../pages/page-to-read/PageToRead";
-
 export const navBarData = [
   {
     path: "/",
@@ -22,5 +22,9 @@ export const navBarData = [
   {
     path: "/book-details/:userId",
     page: BookDetails,
+  },
+  {
+    path: "*",
+    page: ErrorPage,
   },
 ];
