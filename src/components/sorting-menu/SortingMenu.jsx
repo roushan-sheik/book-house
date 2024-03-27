@@ -24,12 +24,12 @@ const SortingMenu = ({ handleSort }) => {
       </MenuHandler>
       <MenuList className="hidden w-[300px]   lg:grid">
         <div className="  flex text-lg flex-start flex-col gap-2">
-          <button
+          {/* <button
             onClick={() => handleSort("all")}
             className="hover:text-black hover:font-bold"
           >
             All
-          </button>
+          </button> */}
           <button
             onClick={() => handleSort("rating")}
             className="hover:text-black hover:font-bold"
