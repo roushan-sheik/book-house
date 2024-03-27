@@ -21,11 +21,16 @@ const SortingMenu = () => {
           />
         </Button>
       </MenuHandler>
-      <MenuList className="hidden w-[150px] grid-cols-7 lg:grid">
-        <div className="  flex text-lg  flex-col gap-1">
-          <button>Rating</button>
-          <button>Pages</button>
-          <button>Publish Year</button>
+      <MenuList className="hidden w-[300px]   lg:grid">
+        <div className="  flex text-lg flex-start flex-col gap-2">
+          <button className="hover:text-black hover:font-bold">All</button>
+          <button className="hover:text-black hover:font-bold">Rating</button>
+          <button className="hover:text-black hover:font-bold">
+            Number of Pages
+          </button>
+          <button className="hover:text-black hover:font-bold">
+            Publish Year
+          </button>
         </div>
       </MenuList>
     </Menu>
