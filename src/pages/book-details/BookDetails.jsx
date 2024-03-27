@@ -2,9 +2,10 @@
 import { Rating, Typography } from "@material-tailwind/react";
 import React from "react";
 import { useParams } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
+import { getBookStorage } from "../../utils/loacla-storage";
 import { readStore } from "../../utils/read-store/readStore";
 import { wishlistStore } from "../../utils/wishlist-store/wishlistStore";
 
@@ -43,7 +44,20 @@ const BookDetails = () => {
   }
 
   function handleWishlistClick() {
-    wishlistStore("wishlist-store", id);
+    // check already read or not
+    const read_storage = getBookStorage("read-store");
+    const exists = read_storage.find((bookId) => bookId == id);
+    console.log(read_storage);
+    console.log(exists);
+    if (exists) {
+      toast.error("Read book couldn't exist!", {
+        position: "top-center",
+      });
+      return;
+    } else {
+      // add to the wishlist
+      wishlistStore("wishlist-store", id);
+    }
   }
 
   return (
