@@ -42,7 +42,6 @@ const BookDetails = () => {
   function handleReadClick() {
     readStore("read-store", id);
   }
-
   function handleWishlistClick() {
     // check already read or not
     const read_storage = getBookStorage("read-store");
