@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "name": "Harper Lee",
+    "country": "United States",
+    "birthday": "April 28, 1926",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-50358657.jpg",
+    "books": ["To Kill a Mockingbird", "Go Set a Watchman"]
+  },
+  {
+    "id": 2,
+    "name": "George Orwell",
+    "country": "United Kingdom",
+    "birthday": "June 25, 1903",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/george-orwell.jpg?crop=1xw:1.0xh;center,top&resize=640:*",
+    "books": ["1984", "Animal Farm", "Homage to Catalonia"]
+  },
+  {
+    "id": 3,
+    "name": "F. Scott Fitzgerald",
+    "country": "United States",
+    "birthday": "September 24, 1896",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlskjr5xJrEV8GchDsUZGEhLBCMfih7bgM_Tt9p671Cg&s",
+    "books": ["The Great Gatsby", "Tender Is the Night"]
+  },
+  {
+    "id": 4,
+    "name": "Margaret Atwood",
+    "country": "Canada",
+    "birthday": "November 18, 1939",
+    "image": "https://literature.britishcouncil.org/assets/Uploads/writers/_resampled/FillWyI2ODAiLCI2ODAiXQ/Margaret-Atwood-c-Jean-Malek-web.jpg",
+    "books": ["The Handmaid's Tale", "The Testaments", "Oryx and Crake"]
+  },
+  {
+    "id": 5,
+    "name": "Jane Austen",
+    "country": "United Kingdom",
+    "birthday": "December 16, 1775",
+    "image": "https://static01.nyt.com/images/2019/12/08/books/review/08sutherland1/merlin_145397748_07cc4422-70a3-49b8-bcaa-b27df6162591-superJumbo.jpg",
+    "books": [
+      "Pride and Prejudice",
+      "Sense and Sensibility",
+      "Emma",
+      "Mansfield Park"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "J.R.R. Tolkien",
+    "country": "United Kingdom",
+    "birthday": "January 3, 1892",
+    "image": "https://cdn.britannica.com/65/66765-050-63A945A7/JRR-Tolkien.jpg",
+    "books": ["The Hobbit", "The Lord of the Rings", "The Silmarillion"]
+  },
+  {
+    "id": 7,
+    "name": "Dan Brown",
+    "country": "United States",
+    "birthday": "June 22, 1964",
+    "image": "https://static.tvtropes.org/pmwiki/pub/images/danbrown1.jpg",
+    "books": ["The Da Vinci Code", "Angels & Demons", "Inferno"]
+  },
+  {
+    "id": 8,
+    "name": "J.K. Rowling",
+    "country": "United Kingdom",
+    "birthday": "July 31, 1965",
+    "image": "https://www.bloomsbury.com/media/r41o2jaa/j-k-rowling.png?width=500&height=500",
+    "books": [
+      "Harry Potter",
+      "Fantastic Beasts and Where to Find Them",
+      "The Casual Vacancy"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Aldous Huxley",
+    "country": "United Kingdom",
+    "birthday": "July 26, 1894",
+    "image": "https://www.thoughtco.com/thmb/ZQ07PCnunXkY_ytpjqstZ7FoqUo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/aldous-huxley-2665140-1b1b01d044c3464e955af162f5467ba7.jpg",
+    "books": ["Brave New World", "Island", "Brave New World Revisited"]
+  },
+  {
+    "id": 10,
+    "name": "J.D. Salinger",
+    "country": "United States",
+    "birthday": "January 1, 1919",
+    "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/06/11/21/rexfeatures_1099120a.jpg",
+    "books": [
+      "The Catcher in the Rye",
+      "Franny and Zooey",
+      "Nine Stories",
+      "Raise High the Roof Beam, Carpenters and Seymour: An Introduction"
+    ]
+  }
+]
