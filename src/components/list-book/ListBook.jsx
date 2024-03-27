@@ -4,6 +4,7 @@ import React from "react";
 import { FaRegFileLines } from "react-icons/fa6";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { MdDateRange } from "react-icons/md";
+import { Link } from "react-router-dom";
 import Btn from "../button/Btn";
 
 const ListBook = ({ book }) => {
@@ -80,12 +81,14 @@ const ListBook = ({ book }) => {
               "bg-[#ffac3326] rounded-3xl py-3 text-base capitalize shadow-none text-[#ffac33]"
             }
           />
-          <Btn
-            label={`View Details`}
-            style={
-              "bg_pri rounded-3xl py-3 text-base capitalize shadow-none text-[#fff]"
-            }
-          />
+          <Link to={`/book-details/${id}`}>
+            <Btn
+              label={`View Details`}
+              style={
+                "bg_pri rounded-3xl py-3 text-base capitalize shadow-none text-[#fff]"
+              }
+            />
+          </Link>
         </div>
       </div>
     </div>
