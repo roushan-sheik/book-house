@@ -1,24 +1,8 @@
 /* eslint-disable no-unused-vars */
-import {
-  BarElement,
-  CategoryScale,
-  Chart as ChartJS,
-  Legend,
-  LinearScale,
-  Title,
-  Tooltip,
-} from "chart.js";
 import React from "react";
-import { Bar } from "react-chartjs-2";
+import { Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis } from "recharts";
 import { getBookStorage } from "../../utils/loacla-storage";
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+
 function PageToRead() {
   const [readBooks, setReadBooks] = React.useState();
 
@@ -41,39 +25,98 @@ function PageToRead() {
     }
     fetchData();
   }, []);
-  console.log(readBooks);
 
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        // position: 'top' as const,
-      },
-    },
+  const colors = ["#00C29C", "#0085f6", "#fbb929", "#fc8042", "#fb0100"];
+
+  const chartData = [
+    // {
+    //   name: "Page A",
+    //   uv: 100,
+    // },
+  ];
+  const data =
+    readBooks?.map((book) => {
+      return {
+        name: book.title,
+        uv: book.page,
+      };
+    }) || chartData;
+
+  const getPath = (x, y, width, height) => {
+    return `M${x},${y + height}C${x + width / 3},${y + height} ${
+      x + width / 2
+    },${y + height / 3}
+  ${x + width / 2}, ${y}
+  C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${y + height} ${
+      x + width
+    }, ${y + height}
+  Z`;
   };
 
-  const labels = readBooks && readBooks.map((book) => book.title);
+  const TriangleBar = (props) => {
+    // eslint-disable-next-line react/prop-types
+    const { fill, x, y, width, height } = props;
 
-  const data = {
-    labels,
-    datasets: [
-      {
-        label: "Pages",
-        data: readBooks && readBooks.map((book) => book.page),
-        backgroundColor: [
-          "#00C29C",
-          "#0085f6",
-          "#fbb929",
-          "#fc8042",
-          "#fb0100",
-        ],
-      },
-    ],
+    return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
   };
 
   return (
-    <div className="h-[700px] lg:py-[120px]  py-[80px] lg:px-[130px]">
-      <Bar options={options} data={data} />
+    <div className="flex justify-center items-center">
+      <div className="hidden sm:block">
+        {" "}
+        <BarChart
+          width={1000}
+          height={300}
+          data={data}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Bar
+            dataKey="uv"
+            fill="#8884d8"
+            shape={<TriangleBar />}
+            label={{ position: "top" }}
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+            ))}
+          </Bar>
+        </BarChart>
+      </div>
+      <div className="sm:hidden">
+        <BarChart
+          width={380}
+          height={250}
+          data={data}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Bar
+            dataKey="uv"
+            fill="#8884d8"
+            shape={<TriangleBar />}
+            label={{ position: "top" }}
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+            ))}
+          </Bar>
+        </BarChart>
+      </div>
     </div>
   );
 }
