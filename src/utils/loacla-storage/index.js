@@ -8,12 +8,12 @@ export function getBookStorage(storageName) {
   return books;
 }
 // set book to localStorage
-export function setBookStorage(storageName, book) {
-  const storageBooks = getBookStorage();
+export function setBookStorage(storageName, bookId) {
+  const storageBooks = getBookStorage(storageName);
   // check already exist this book or not
-  const ifExists = storageBooks.find((item) => item.id == book.id);
+  const ifExists = storageBooks.find((itemId) => itemId == bookId);
   if (!ifExists) {
-    storageBooks.push(book);
+    storageBooks.push(bookId);
     localStorage.setItem(storageName, JSON.stringify(storageBooks));
   } else {
     return;
