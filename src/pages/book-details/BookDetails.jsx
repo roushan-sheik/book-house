@@ -1,18 +1,136 @@
 /* eslint-disable no-unused-vars */
+import { Rating, Typography } from "@material-tailwind/react";
 import React from "react";
 import { useParams } from "react-router-dom";
-import useFetchData from "../../hooks/useFetchData";
+import Btn from "../../components/button/Btn";
 
 const BookDetails = () => {
   const [singleData, setSingleData] = React.useState({});
-  const { userId } = useParams();
-  const { books, loading } = useFetchData();
-  React.useEffect(() => {
-    const singleData = books.find((book) => book.id == userId);
-    setSingleData(singleData);
-  }, [books, userId]);
+  const [allBooks, setAllBooks] = React.useState([]);
 
-  return <div>BookDetails</div>;
+  const { userId } = useParams();
+  //   const { books, loading } = useFetchData();
+  React.useEffect(() => {
+    async function fetcheData() {
+      const res = await fetch("/books.json");
+      const data = await res.json();
+      setAllBooks(data);
+    }
+    fetcheData();
+  }, []);
+  const findData = allBooks.find((book) => book.id == userId);
+
+  const {
+    title,
+    image,
+    author,
+    review,
+    tags,
+    category,
+    page,
+    publisher,
+    publishYear,
+    rating,
+  } = findData || {};
+
+  return (
+    <>
+      <div className="flex flex-col lg:flex-row gap-12 mb-20 ">
+        {/* image box  */}
+        <div className="flex-1 flex bg_third justify-center items-center rounded-2xl 2xl:p-[73px] lg:p-16 p-4">
+          <div className="object-cover w-[425px] lg:h-[564px]  shadow-xl">
+            <img className="w-full h-full" src={image} alt="" />
+          </div>
+        </div>
+        {/* details box  */}
+        <div className="">
+          <h2 className="text-3xl lg:text-4xl 2xl:text-[40px] mb-5 font-bold">
+            {title}
+          </h2>
+          <p className="text-xl font-medium text-lx text_sec mb-5">
+            By: {author}
+          </p>
+          <div className="text-xl font-medium border-y-2 py-3">Fiction</div>
+          <p className="text_third text-base mt-5">
+            <span className="font-bold text_pri">Review:</span> {review}
+          </p>
+          <div className="flex gap-3 lg:mt-10 mt-6 border-b-2 pb-5">
+            <p className="font-bold text_pri">Tag</p>
+            {tags &&
+              tags.map((tag, ind) => {
+                return (
+                  <p
+                    className="text_brand font-medium text-base"
+                    key={(tag, ind)}
+                  >
+                    #{tag}
+                  </p>
+                );
+              })}
+          </div>
+          {/* info details  */}
+          <div className="flex text-base mt-6 mb-3">
+            <Typography className="flex-1 text_third" as={"p"}>
+              Number of Pages:
+            </Typography>
+            <Typography className="flex-1 text_pri font-semibold" as={"p"}>
+              {page}
+            </Typography>
+          </div>
+          <div className="flex text-base mb-3">
+            <Typography className="flex-1 text_third" as={"p"}>
+              Publisher:
+            </Typography>
+            <Typography className="flex-1 text_pri font-semibold" as={"p"}>
+              {publisher}
+            </Typography>
+          </div>
+          <div className="flex text-base mb-3">
+            <Typography className="flex-1 text_third" as={"p"}>
+              Year of Publishing:
+            </Typography>
+            <Typography className="flex-1 text_pri font-semibold" as={"p"}>
+              {publishYear}
+            </Typography>
+          </div>
+          <div className="flex text-base mb-3">
+            <Typography className="flex-1 text_third" as={"p"}>
+              Rating:
+            </Typography>
+            <Typography
+              className="flex-1 flex gap-2 items-center text_pri font-semibold text-base"
+              as={"p"}
+            >
+              <Typography
+                className="
+               font-semibold"
+                as={"span"}
+              >
+                {" "}
+                {rating}
+              </Typography>
+              <Typography className="text-sm mt-1" as={"span"}>
+                <Rating value={4} />
+              </Typography>
+            </Typography>
+          </div>
+          {/* button box  */}
+          <div className="mt-8 flex gap-4 ">
+            <Btn
+              label={"Read"}
+              style={
+                "bg-transparent border-2 border-[#1313134d] capitalize text-lg font-semibold"
+              }
+            />
+            <Btn
+              label={"Wishlist"}
+              style={"bg_sec capitalize text-white text-lg font-semibold"}
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default BookDetails;
