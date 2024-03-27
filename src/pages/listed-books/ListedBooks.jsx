@@ -35,7 +35,7 @@ const ListedBooks = () => {
     }
     fetchData();
   }, []);
-  console.log(read);
+
   return (
     <div>
       <div className="">
@@ -60,10 +60,8 @@ const ListedBooks = () => {
 
             <TabPanel>
               <div className="flex flex-col gap-6">
-                {wishlist &&
-                  wishlist.map((book) => (
-                    <ListBook book={book} key={book.id} />
-                  ))}
+                {read &&
+                  read.map((book) => <ListBook book={book} key={book.id} />)}
               </div>
             </TabPanel>
             <TabPanel>
