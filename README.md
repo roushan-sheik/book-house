@@ -1,8 +1,39 @@
-# React + Vite
+# React Router Dom Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Book House App
 
-Currently, two official plugins are available:
+### installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`npm install`
+
+### running the app
+
+`npm run dev`
+
+### Deployed Netlify
+
+#### Live link: https://roushan-book-house.netlify.app/
+
+### Used tools & Technologies
+
+- React
+- Tailwind
+- Material Tailwind (component library)
+- React router dom
+- Recharts
+- React tostify
+- React tabs
+- React icons
+- Hero icons
+
+## Hello
+
+### I'm Roushan Sheik
+
+### Let't connect
+
+- [LinkedIn](https://www.linkedin.com/in/roushan-sheik/)
+
+- [Facebook](https://www.facebook.com/mdrowshansheikh008/)
+- [Twitter](https://twitter.com/RoushanSheik)
+- https://github.com/roushan-sheik
