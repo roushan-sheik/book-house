@@ -68,7 +68,7 @@ const ListBook = ({ book }) => {
           </div>
         </div>
         {/* button box  */}
-        <div className="mt-4 flex flex-col lg:flex-row gap-3">
+        <div className="mt-4 flex flex-col lg:flex-row  gap-3">
           <Btn
             label={`Category: ${category}`}
             style={
@@ -81,14 +81,16 @@ const ListBook = ({ book }) => {
               "bg-[#ffac3326] rounded-3xl py-3 text-base capitalize shadow-none text-[#ffac33]"
             }
           />
-          <Link to={`/book-details/${id}`}>
-            <Btn
-              label={`View Details`}
-              style={
-                "bg_pri rounded-3xl py-3 text-base capitalize shadow-none text-[#fff]"
-              }
-            />
-          </Link>
+          <div className="flex lg:justify-center justify-center">
+            <Link to={`/book-details/${id}`}>
+              <Btn
+                label={`View Details`}
+                style={
+                  "bg_pri rounded-3xl py-3 text-base capitalize shadow-none text-[#fff]"
+                }
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
