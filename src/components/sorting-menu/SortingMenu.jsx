@@ -22,7 +22,7 @@ const SortingMenu = ({ handleSort }) => {
           />
         </Button>
       </MenuHandler>
-      <MenuList className="hidden w-[300px]   lg:grid">
+      <MenuList className=" w-[300px] z-50   lg:grid">
         <div className="  flex text-lg flex-start flex-col gap-2">
           {/* <button
             onClick={() => handleSort("all")}
