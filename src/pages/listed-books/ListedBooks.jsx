@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import { Spinner } from "@material-tailwind/react";
 import React, { useEffect } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
@@ -10,6 +11,7 @@ const ListedBooks = () => {
   const [sortedWish, setSortedWish] = React.useState([]);
   const [sortedRead, setSortedRead] = React.useState([]);
   const [wishlist, setWishlist] = React.useState();
+  const [loading, setLoading] = React.useState(false);
   const [read, setRead] = React.useState();
   const wishlistStore = getBookStorage("wishlist-store");
   const readStore = getBookStorage("read-store");
@@ -18,24 +20,31 @@ const ListedBooks = () => {
     let storeData = [];
     let readData = [];
     async function fetchData() {
-      const res = await fetch("/books.json");
-      const data = await res.json();
-      data.find((book) => {
-        for (const id of wishlistStore) {
-          if (book.id == id) {
-            storeData.push(book);
+      try {
+        setLoading(true);
+        const res = await fetch("/books.json");
+        const data = await res.json();
+        data.find((book) => {
+          for (const id of wishlistStore) {
+            if (book.id == id) {
+              storeData.push(book);
+            }
           }
-        }
-        for (const id of readStore) {
-          if (book.id == id) {
-            readData.push(book);
+          for (const id of readStore) {
+            if (book.id == id) {
+              readData.push(book);
+            }
           }
-        }
-      });
-      setWishlist(storeData);
-      setRead(readData);
-      setSortedRead(readData);
-      setSortedWish(storeData);
+        });
+        setWishlist(storeData);
+        setRead(readData);
+        setSortedRead(readData);
+        setSortedWish(storeData);
+        setLoading(false);
+      } catch (error) {
+        console.log("Something went wrong.");
+        console.log(error);
+      }
     }
     fetchData();
   }, []);
@@ -55,8 +64,6 @@ const ListedBooks = () => {
       ]);
     }
   }
-  console.log("Read", sortedRead);
-  console.log("Wish", sortedWish);
 
   return (
     <div>
@@ -64,6 +71,10 @@ const ListedBooks = () => {
         <h2 className="p-8 text-center bg_third rounded-2xl lg:text-3xl text-2xl font-bold text_pri">
           Books
         </h2>
+        {/* spinner  */}
+        <div className="flex justify-center items-center">
+          {loading && <Spinner className="h-12 w-12" />}
+        </div>
         {/* sorting button  */}
         <div className="flex justify-center mt-8">
           <SortingMenu handleSort={handleSort} />
