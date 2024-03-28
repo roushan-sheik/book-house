@@ -4,11 +4,15 @@
 
 ### installation
 
-`npm install`
+```
+npm install
+```
 
 ### running the app
 
-`npm run dev`
+```
+npm run dev
+```
 
 ### Deployed Netlify
 
