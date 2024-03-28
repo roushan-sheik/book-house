@@ -67,7 +67,9 @@ const AuthorDetails = () => {
           <Link to={"/writers"}>
             <Btn
               label={"See all Authors"}
-              style={"bg_pri mt-6 text-white capitalize text-base"}
+              style={
+                "bg_pri mt-6 text-lg text-semibold text-white capitalize text-base"
+              }
             />
           </Link>
         </div>

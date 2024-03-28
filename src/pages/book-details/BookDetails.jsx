@@ -75,9 +75,6 @@ const BookDetails = () => {
           </h2>
           <p className="text-center lg:text-start text-xl font-medium text-lx text_sec mb-5">
             By: {author}{" "}
-            <Link to={`/book-details/author/${author}`}>
-              <Btn label={"See Author Details"} />
-            </Link>
           </p>
           <div className="text-center lg:text-start text-xl font-medium border-y-2 py-3">
             Fiction
@@ -148,6 +145,12 @@ const BookDetails = () => {
               label={"Wishlist"}
               style={"bg_sec capitalize text-white text-lg font-semibold"}
             />
+            <Link to={`/book-details/author/${author}`}>
+              <Btn
+                label={"See Author Details"}
+                style={"bg_pri  capitalize text-white text-lg font-semibold"}
+              />
+            </Link>
           </div>
         </div>
       </div>
