@@ -64,14 +64,24 @@ const AuthorDetails = () => {
               {description}
             </p>
           </div>
-          <Link to={"/writers"}>
-            <Btn
-              label={"See all Authors"}
-              style={
-                "bg_pri mt-6 text-lg text-semibold text-white capitalize text-base"
-              }
-            />
-          </Link>
+          <div className="flex gap-6">
+            <Link to={"/writers"}>
+              <Btn
+                label={"See all Authors"}
+                style={
+                  "bg_pri mt-6 text-lg text-semibold text-white capitalize text-base"
+                }
+              />
+            </Link>
+            <Link to={-1}>
+              <Btn
+                label={"Back"}
+                style={
+                  "bg_ mt-6 text-base text-semibold text_pri bg_third border-2 shadow-none capitalize "
+                }
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
