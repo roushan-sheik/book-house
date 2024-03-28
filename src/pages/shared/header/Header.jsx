@@ -11,7 +11,11 @@ function Header() {
       <Navbar className="sticky top-0 shadow-none z-10 px-0 h-max max-w-full rounded-none  py-2 lg:py-4">
         <div className="flex items-center justify-between text-blue-gray-900">
           <h3 className="text-medium lg:text-[28px] font-bold">
-            <NavLink to={"/"} href="#" className="mr-4 cursor-pointer py-1.5  ">
+            <NavLink
+              to={"/"}
+              href="#"
+              className="mr-4 text-nowrap  cursor-pointer py-1.5  "
+            >
               Book House
             </NavLink>
           </h3>
@@ -74,16 +78,16 @@ function Header() {
         </div>
         <Collapse open={openNav}>
           {<NavList />}
-          <div className="flex items-center gap-x-1">
+          <div className="flex items-center  gap-x-1">
             <Btn
               label={"Sign In"}
               size="sm"
-              style={"w-full bg_pri text-white capitalize"}
+              style={"w-full bg_pri text-white text-nowrap  capitalize"}
             />
             <Btn
               label={"Sign Up"}
               size="sm"
-              style={"w-full bg_sec text-white capitalize"}
+              style={"w-full bg_sec text-white text-nowrap  capitalize"}
             />
           </div>
         </Collapse>

@@ -13,7 +13,8 @@ const NavList = () => {
             key={(nav.pathName, nav.page)}
             as="li"
             variant="small"
-            className="p-1 lg:text-lg font-medium  text_sec"
+            className="p-1 lg:text-lg font-medium text-nowrap 
+           text_sec"
           >
             <NavLink
               to={nav.path}

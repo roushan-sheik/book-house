@@ -6,7 +6,7 @@ import Header from "../pages/shared/header/Header";
 
 const Root = () => {
   return (
-    <div className=" max-w-[112.5rem]">
+    <div className=" max-w-[112.5rem] mx-auto">
       <div className="w-[90%] mx-auto">
         <Header />
         <Outlet />
