@@ -39,7 +39,7 @@ export const navBarData = [
     page: BookDetails,
   },
   {
-    path: "/book-details/author/:authorId",
+    path: "/book-details/author/:authorName",
     page: AuthorDetails,
   },
   {

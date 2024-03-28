@@ -10,7 +10,6 @@ import { readStore } from "../../utils/read-store/readStore";
 import { wishlistStore } from "../../utils/wishlist-store/wishlistStore";
 
 const BookDetails = () => {
-  const [singleData, setSingleData] = React.useState({});
   const [allBooks, setAllBooks] = React.useState([]);
 
   const { userId } = useParams();
@@ -46,8 +45,7 @@ const BookDetails = () => {
     // check already read or not
     const read_storage = getBookStorage("read-store");
     const exists = read_storage.find((bookId) => bookId == id);
-    console.log(read_storage);
-    console.log(exists);
+
     if (exists) {
       toast.error("Read book couldn't add to the wishlist.", {
         position: "top-right",
@@ -77,7 +75,7 @@ const BookDetails = () => {
           </h2>
           <p className="text-center lg:text-start text-xl font-medium text-lx text_sec mb-5">
             By: {author}{" "}
-            <Link to={`/book-details/author/${id}`}>
+            <Link to={`/book-details/author/${author}`}>
               <Btn label={"See Author Details"} />
             </Link>
           </p>
