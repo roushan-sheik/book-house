@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Rating, Typography } from "@material-tailwind/react";
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
@@ -76,7 +76,10 @@ const BookDetails = () => {
             {title}
           </h2>
           <p className="text-center lg:text-start text-xl font-medium text-lx text_sec mb-5">
-            By: {author}
+            By: {author}{" "}
+            <Link to={`/book-details/author/${id}`}>
+              <Btn label={"See Author Details"} />
+            </Link>
           </p>
           <div className="text-center lg:text-start text-xl font-medium border-y-2 py-3">
             Fiction

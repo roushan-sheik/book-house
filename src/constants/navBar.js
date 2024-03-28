@@ -1,3 +1,4 @@
+import AuthorDetails from "../pages/author-details/AuthorDetails";
 import BookDetails from "../pages/book-details/BookDetails";
 import ErrorPage from "../pages/error/ErrorPage";
 import Home from "../pages/home/Home";
@@ -36,6 +37,10 @@ export const navBarData = [
   {
     path: "/book-details/:userId",
     page: BookDetails,
+  },
+  {
+    path: "/book-details/author/:authorId",
+    page: AuthorDetails,
   },
   {
     path: "*",
