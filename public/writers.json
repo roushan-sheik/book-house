@@ -5,7 +5,8 @@
     "country": "United States",
     "birthday": "April 28, 1926",
     "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-50358657.jpg",
-    "books": ["To Kill a Mockingbird", "Go Set a Watchman"]
+    "books": ["To Kill a Mockingbird", "Go Set a Watchman"],
+    "description": "Harper Lee, born on April 28, 1926, in the United States, was a renowned American author best known for her novel 'To Kill a Mockingbird'. This classic work, published in 1960, explores themes of racial injustice and moral growth in the American South. It earned Lee numerous accolades, including the Pulitzer Prize for Fiction. Despite being her only published novel for decades, Lee's impact on literature remained profound. In 2015, a second novel by Lee, 'Go Set a Watchman', was released, stirring both excitement and controversy among readers. Harper Lee's contributions to literature continue to be celebrated worldwide."
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "country": "United Kingdom",
     "birthday": "June 25, 1903",
     "image": "https://hips.hearstapps.com/hmg-prod/images/george-orwell.jpg?crop=1xw:1.0xh;center,top&resize=640:*",
-    "books": ["1984", "Animal Farm", "Homage to Catalonia"]
+    "books": ["1984", "Animal Farm", "Homage to Catalonia"],
+    "description": "George Orwell, born on June 25, 1903, in the United Kingdom, was an influential English writer known for his dystopian fiction and keen social commentary. His works, such as '1984' and 'Animal Farm', have become literary classics, exploring themes of totalitarianism, censorship, and the corruption of power. Orwell's experiences as a soldier and journalist informed his writing, lending it a gritty realism and political insight. 'Homage to Catalonia' reflects his involvement in the Spanish Civil War. Orwell's legacy extends beyond literature; his ideas and warnings about the dangers of authoritarianism remain relevant in the modern world."
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "country": "United States",
     "birthday": "September 24, 1896",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlskjr5xJrEV8GchDsUZGEhLBCMfih7bgM_Tt9p671Cg&s",
-    "books": ["The Great Gatsby", "Tender Is the Night"]
+    "books": ["The Great Gatsby", "Tender Is the Night"],
+    "description": "F. Scott Fitzgerald, born on September 24, 1896, in the United States, was a prominent American author of the Jazz Age, best known for his novel 'The Great Gatsby'. This iconic work explores themes of wealth, love, and the American Dream against the backdrop of the Roaring Twenties. Fitzgerald's writing style, characterized by lyrical prose and acute social observation, has left an indelible mark on American literature. His other notable works include 'Tender Is the Night'. Despite facing personal and professional challenges, Fitzgerald's legacy as a literary giant endures."
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "country": "Canada",
     "birthday": "November 18, 1939",
     "image": "https://literature.britishcouncil.org/assets/Uploads/writers/_resampled/FillWyI2ODAiLCI2ODAiXQ/Margaret-Atwood-c-Jean-Malek-web.jpg",
-    "books": ["The Handmaid's Tale", "The Testaments", "Oryx and Crake"]
+    "books": ["The Handmaid's Tale", "The Testaments", "Oryx and Crake"],
+    "description": "Margaret Atwood, born on November 18, 1939, in Canada, is a celebrated Canadian author known for her insightful explorations of dystopian societies, feminism, and environmentalism. Her novel 'The Handmaid's Tale' has achieved widespread acclaim for its chilling portrayal of a totalitarian regime where women are subjugated. Atwood's literary career spans decades and encompasses various genres, including speculative fiction, poetry, and essays. She has received numerous awards, including the Booker Prize, and continues to be a powerful voice in contemporary literature."
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
       "Sense and Sensibility",
       "Emma",
       "Mansfield Park"
-    ]
+    ],
+    "description": "Jane Austen, born on December 16, 1775, in the United Kingdom, was an English novelist whose works of romantic fiction, set among the British landed gentry, have earned her a place as one of the most widely read writers in English literature. Her realism, biting social commentary, and keen insight into human nature are evident in novels such as 'Pride and Prejudice', 'Sense and Sensibility', and 'Emma'. Austen's works continue to be beloved for their wit, character development, and enduring themes of love, marriage, and social status."
   },
   {
     "id": 6,
@@ -50,7 +55,8 @@
     "country": "United Kingdom",
     "birthday": "January 3, 1892",
     "image": "https://cdn.britannica.com/65/66765-050-63A945A7/JRR-Tolkien.jpg",
-    "books": ["The Hobbit", "The Lord of the Rings", "The Silmarillion"]
+    "books": ["The Hobbit", "The Lord of the Rings", "The Silmarillion"],
+    "description": "J.R.R. Tolkien, born on January 3, 1892, in the United Kingdom, was a renowned English writer, poet, philologist, and university professor, best known for his high fantasy works. His magnum opus, 'The Lord of the Rings', is considered one of the greatest works of fantasy literature ever written. Set in the fictional world of Middle-earth, Tolkien's epic tale of adventure, friendship, and the struggle against darkness has captivated readers worldwide. 'The Hobbit', 'The Lord of the Rings', and 'The Silmarillion' are among his most famous works, showcasing his unparalleled imagination and mastery of language."
   },
   {
     "id": 7,
@@ -58,7 +64,8 @@
     "country": "United States",
     "birthday": "June 22, 1964",
     "image": "https://static.tvtropes.org/pmwiki/pub/images/danbrown1.jpg",
-    "books": ["The Da Vinci Code", "Angels & Demons", "Inferno"]
+    "books": ["The Da Vinci Code", "Angels & Demons", "Inferno"],
+    "description": "Dan Brown, born on June 22, 1964, in the United States, is a bestselling American author known for his gripping thrillers that blend history, art, and conspiracy theories. His breakthrough novel, 'The Da Vinci Code', became a global phenomenon, captivating readers with its intricate plot and controversial theories about Christianity and history. Brown's other notable works include 'Angels & Demons' and 'Inferno', all featuring his signature blend of fast-paced action and intellectual puzzles. His novels have sold millions of copies worldwide and have been adapted into blockbuster films."
   },
   {
     "id": 8,
@@ -66,7 +73,8 @@
     "country": "United Kingdom",
     "birthday": "July 31, 1965",
     "image": "https://www.bloomsbury.com/media/r41o2jaa/j-k-rowling.png?width=500&height=500",
-    "books": ["Harry Potter", "Fantastic Beasts ", "The Casual Vacancy"]
+    "books": ["Harry Potter", "Fantastic Beasts ", "The Casual Vacancy"],
+    "description": "J.K. Rowling, born on July 31, 1965, in the United Kingdom, is a beloved British author best known for creating the magical world of Harry Potter. Her series, which follows the adventures of a young wizard named Harry Potter and his friends at Hogwarts School of Witchcraft and Wizardry, has enchanted readers of all ages around the globe. Rowling's richly imagined universe, filled with spells, creatures, and unforgettable characters, has become a cultural phenomenon, inspiring films, merchandise, and a dedicated fan base. In addition to the Harry Potter series, Rowling has written novels for adults, including 'The Casual Vacancy', and expanded the wizarding world with the 'Fantastic Beasts' series."
   },
   {
     "id": 9,
@@ -74,7 +82,8 @@
     "country": "United Kingdom",
     "birthday": "July 26, 1894",
     "image": "https://www.thoughtco.com/thmb/ZQ07PCnunXkY_ytpjqstZ7FoqUo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/aldous-huxley-2665140-1b1b01d044c3464e955af162f5467ba7.jpg",
-    "books": ["Brave New World", "Island", "Brave New World Revisited"]
+    "books": ["Brave New World", "Island", "Brave New World Revisited"],
+    "description": "Aldous Huxley, born on July 26, 1894, in the United Kingdom, was an English writer and philosopher best known for his dystopian novel 'Brave New World'. Published in 1932, 'Brave New World' depicts a futuristic society where technological advancements have led to the suppression of individuality and freedom. Huxley's works often explore complex themes such as the dangers of totalitarianism, the role of technology in society, and the search for meaning in a rapidly changing world. In addition to 'Brave New World', Huxley wrote numerous essays, novels, and screenplays, establishing himself as a leading intellectual of the 20th century."
   },
   {
     "id": 10,
@@ -87,6 +96,7 @@
       "Franny and Zooey",
       "Nine Stories",
       "Raise High the Roof Beam "
-    ]
+    ],
+    "description": "J.D. Salinger, born on January 1, 1919, in the United States, was an enigmatic American author known for his novel 'The Catcher in the Rye'. First published in 1951, 'The Catcher in the Rye' became an instant classic and a defining work of 20th-century literature, admired for its authentic portrayal of adolescent angst and rebellion. Salinger's writing style, marked by a distinctive voice and keen psychological insight, resonated with readers of all ages. Despite his reclusive nature and limited literary output, Salinger's influence on modern literature remains profound, with his works continuing to inspire and provoke thought."
   }
 ]
